@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 2000px;
+}
+
+
+body {
+    background: rgb(216, 213, 213);
+    font-family: Arial;
+
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0p 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo span {
+    color: #fff ;
+    font-size: 1.9em;
+    line-height: 45px;
+    margin-left: 40px;
+}
+
+@media(min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+}
+@media(max-width: 701px) {
+    #logo {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about{
+    float: left;
+    width: 100%;
+}
+
+#about {
+    text-align: center;
+    line-height: 40px;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+
+}
+
+#about > a {color: #fff; margin-right: 8%;text-decoration: none;
+}
+
+#about > a:hover {
+    color: steelblue;
+    text-decoration: none;
+}
+
+.fixed {
+z-index: 5000px;
+background-color: #343434;
+}
+
+
+#top {
+    background-image: url('https://itproger.com/img/courses/1477044395.jpg');
+    width: 100%;
+
+    height: 1000px;
+    background-blend-mode: multiply;
+    background-color: #383131;
+    background-size: cover;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+
+
+}
+
+#top h1  {
+    padding-top: 20%;
+}
+
+@media(min-width: 657px) and (max-width: 1001px) {
+    #top{
+        font-size:  2em;
+        padding-top: 200px;
+
+    }
+}
+
+@media(max-width: 657px) {
+    #top{
+        font-size:  1em;
+        padding-top: 300px;
+    }
+}
+
+#main {
+    padding: 100px 20%;
+    width:  60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.33em;
+}
+#main {
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+  }
+  
+  @media (min-width: 1401px) {
+    #main {
+      padding: 100px 20%;
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    #main {
+      padding: 100px 10%;
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    #main div {
+      width: 98%!important;
+      margin-bottom: 20px;
+    }
+  }
+  
+  #main div {
+    width: 70%;
+    margin-right: 2%;
+    float: left;
+  }
+  
+  #main h2 {font-size: 3em; float: right;}
+  #main span  {color: #a0a0a0}
+
+  #overview {
+    float: left;
+    background-image: url('https://itproger.com/img/courses/1477044395.jpg');
+    background-blend-mode: multiply;
+    background-color: #343434;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+  }
+
+#overview h2 {
+font-size: 4em;
+
+  }
+
+#overview h4 {
+    color:aqua;
+}
+
+.imgblock img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+    max-width: 500px;
+
+}
+#overview .imgblock img:nth-child(odd) {
+margin-left: 18%;
+}
+
+
+#contacts {
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    border-bottom: 4px solid #ccc;
+    font-size: 1.1em;
+    font-weight: lighter;
+
+}
+
+#contacts form input {
+margin-top: 15px;
+width: 35%;
+margin-left: 38%;
+font-size: 1.1em;
+}
+#contacts textarea {
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}

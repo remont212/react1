@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Project4</title>
+</head>
+<body>
+    <header>
+<div id="logo" onclick="slowScroll('#top')">
+        <span>ProgerRoman</span>
+    </div>
+    <div ID="about">
+<a href="#"  onclick="slowScroll('#main')">Возможнности</a>
+<a href="#"  onclick="slowScroll('#overview')">Преимущества</a>
+<a href="#"  onclick="slowScroll('#contacts')">Помощь</a>    
+<a href="#"  onclick="slowScroll('#faq')">Ответы на вопросы</a>
+</div>
+    </header>
+    <div id="top">
+        <h1>Программирование</h1>
+        <h3>Top</h3>
+    </div>
+    <div id="main">
+        <div class="intro">
+            <h2>Наши услуги помогут вам</h2>
+            <span>Какой то текст</span>
+            <div class="text">
+                <p>В ходе этого видео мы сделаем полноценный шаблон сайта на чистом HTML5 и CSS3. Дополнительно мы также поработаем с сервером и опубликуем наш сайт в Интернете на VDS сервер, используя панель VestaCP.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="overview">
+        <h2>Проеимущества</h2>
+        <h3>С нами всё проще</h3>
+        <div class="imgblock">
+            <img src="https://itproger.com/img/courses/django.svg" alt="">
+        </div>
+        <div class="imgblock">
+            <img src="https://itproger.com/img/courses/1510913647.jpg" alt="">
+
+        </div>
+    </div>
+    <div id="contacts">
+       <center><h2>Поддержка</h2></center>
+        <form action="post">
+            <input type="e-mail" placeholder="Email">
+            <input type="text" placeholder="name">
+            <textarea name="" id="" cols="10" rows="5"></textarea>
+        </form></center>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+    
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+          else
+            $("header").attr("class", "fixed");
+        });
+      </script>
+    </body>
+</html>
